@@ -1,6 +1,7 @@
 
 var wordlink = "https://narangyawali.github.io/worldListGen/";
 var word = document.querySelector("#word");
+var llist ="https://narangyawali.github.io/linesGen/";
 
 function goto(link){
     window.open(wordlink);
@@ -29,6 +30,10 @@ function wl(){
 
     window.open(wordlink);
 
+}
+
+function ll(){
+window.open(llist);
 }
 
 
