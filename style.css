@@ -28,7 +28,7 @@ img{
 
 .sidebar{
     width: 15%;
-    height: 599px;
+    height: 100vh;
     background-color: rgb(125, 175, 192);
     z-index: 20;
 }
