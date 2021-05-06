@@ -31,6 +31,21 @@ img{
     height: 100vh;
     background-color: rgb(125, 175, 192);
     z-index: 20;
+    position: absolute;
+}
+.social{
+    top: 5%;
+    position: relative;
+}
+
+.wtext{
+	/* margin-top: 500x; */
+	position: relative;
+    margin-right: 500px;
+    float:right;
+    top: 125px;
+    z-index: 5;
+    
 }
 
 .cont{
@@ -73,5 +88,25 @@ h3{
     color: blanchedalmond;
 }
 
+.cursor{
+    background-color: black;
+    width: 0px;
+	font-size: 18px;   
+    animation: blink 1s infinite;
+}
 
+@keyframes blink {
+	0%{background-color: black;}
+    49%{background-color: black;}
+    50%{background-color: transparent;}
+    99%{background-color: transparent;}	
+    100%{background-color: black;}
 
+}
+.const{
+	position: absolute;
+    /* bottom: 50px; */
+    top: 590px;
+	right: 350px;    
+
+}

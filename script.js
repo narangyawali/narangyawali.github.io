@@ -1,7 +1,11 @@
+var typing = document.querySelector(".typing");
 
 var wordlink = "https://narangyawali.github.io/worldListGen/";
 var word = document.querySelector("#word");
 var llist ="https://narangyawali.github.io/linesGen/";
+const btext = "HELLO WORLD";
+let index =0;
+
 
 function goto(link){
     window.open(wordlink);
@@ -37,3 +41,34 @@ window.open(llist);
 }
 
 
+function type(){
+if (index < btext.length){
+
+    typing.textContent += btext.charAt(index);
+    index ++;
+    setTimeout(type,500);
+
+}
+else{
+	setTimeout(erase ,1000);
+   	
+}
+function erase(){
+	if (index >0){
+	typing.textContent = btext.substring(0,index-1);
+    index--;
+    setTimeout(erase, 250);
+    }
+    else{
+        type();
+    }
+    
+}
+
+}
+
+document.addEventListener("DOMContentLoaded",function(){
+    setTimeout(type,2500);
+
+
+});
